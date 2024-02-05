@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cadastro de Produtos Geek</h1>
+    </header>
+
+    <section>
+        <label for="produto">Nome do Produto:</label>
+        <input type="text" id="produto" placeholder="Nome do produto">
+
+        <label for="valor">Valor em R$:</label>
+        <input type="number"  id="valor" placeholder="Valor do produto">
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" placeholder="Descrição do produto"></textarea>
+
+        
+        <button onclick="cadastrarProduto()">Cadastrar Produto</button>
+        <p id="feedback"></p>
+      </section>
+
+    <section class="">
+        <h2>Produtos Cadastrados</h2>
+        <ul id="listaProdutos"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
